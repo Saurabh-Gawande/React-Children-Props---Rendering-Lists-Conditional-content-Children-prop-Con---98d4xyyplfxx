@@ -3,15 +3,15 @@ import '../styles/App.css';
 import ChildComponent from './ChildComponent';
 const App = () => {
   const [change, setChange] = useState(0)
-  // const [square, setSquare] = useState(0)
+  
  function click(event){
     setChange (event.target.value);
-    // setSquare(change*change);
+    
  }
 
   return (
     <div id="main">
-      <ChildComponent /> 
+      <ChildComponent input={<input id='input' onChange={click} />}/> 
        <input id='input' onChange={click} />
     
       <p id='output'>{change*change}</p>
