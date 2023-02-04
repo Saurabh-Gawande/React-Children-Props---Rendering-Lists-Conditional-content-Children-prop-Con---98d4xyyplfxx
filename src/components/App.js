@@ -11,8 +11,8 @@ const App = () => {
 
   return (
     <div id="main">
+       {/* <input id='input' onChange={click} /> */}
       <ChildComponent input={<input id='input' onChange={click} />}/> 
-       <input id='input' onChange={click} />
     
       <p id='output'>{change*change}</p>
     </div>
